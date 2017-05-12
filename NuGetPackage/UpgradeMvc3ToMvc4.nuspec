@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>TraffordCouncil.UpgradeMvc3ToMvc4</id>
+        <version>1.1.0</version>
+        <title>Auto upgrade MVC 3 To MVC 4</title>
+        <authors>Nandip Makwana, Jeremy Page</authors>
+        <owners>Nandip Makwana forked by Trafford Council</owners>
+        <projectUrl>https://github.com/TraffordCouncil/UpgradeMvc3ToMvc4</projectUrl>
+        <iconUrl>https://avatars0.githubusercontent.com/u/4487430</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Package for auto upgrade MVC 3 Application to MVC 4 Application</description>
+        <summary>Package for auto upgrade MVC 3 Application to MVC 4 Application</summary>
+        <releaseNotes>Remove OAuth. Remove need for explicit dependency versions.</releaseNotes>
+        <language />
+        <tags>MVC Upgrade</tags>
+        <dependencies>
+            <group targetFramework=".NETFramework4.0">
+                <dependency id="Microsoft.AspNet.Mvc" version="4.0.20710.0" />
+                <dependency id="Microsoft.AspNet.Mvc.FixedDisplayModes" version="1.0.0" />
+                <dependency id="Microsoft.AspNet.Web.Optimization" version="1.0.0" />
+                <dependency id="Newtonsoft.Json" version="4.5.10" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="content\App_Start\BundleConfig.cs.pp" target="content\App_Start\BundleConfig.cs.pp" />
+        <file src="content\web.config.transform" target="content\web.config.transform" />
+        <file src="tools\install.ps1" target="tools\install.ps1" />
+        <file src="Readme.txt" target="" />
+    </files>
+</package>
